@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 return response.json();
             })
             .then(function (data) {
-                console.log(data);
                 let lat = data.location.lat;
                 let lon = data.location.lng;
                 let ipAddress = data.ip;
@@ -57,7 +56,6 @@ document.addEventListener('DOMContentLoaded', function () {
             })
             .catch(function (error) {
                 console.error(error);
-                console.log('Invalid IP:', userinput);
             });
 
     }
